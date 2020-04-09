@@ -20,24 +20,21 @@ def on_open(ws):
     }}
 
     ws.send(json.dumps(login))
-
     channel_data = {'op': 'subscribe', 'channel': 'fills'}
     ws.send(json.dumps(channel_data))
 
 
 def on_message(ws,message):
-
     json_message=json.loads(message)
     try:
-
         data=json_message['data']
-
         price=data['price']
         size=data['size']
         side=data['side']
         market=data['market']
         fee=data['fee']
         liquidity=data['liquidity']
+        
         bot.sendMessage(chatId, f"A {market} order got filled")
         bot.sendMessage(chatId,f"Market = {market} | Price = {price} | Size = {size} | Side = {side} | Liquidity = {liquidity} | Fee = {fee}")
 
