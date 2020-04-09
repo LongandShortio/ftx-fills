@@ -1,6 +1,6 @@
 # Setup the bot
 
-Enter your API keys in *parameters.py*
+Enter your API keys in **parameters.py**
 
 # Launch the bot
 
