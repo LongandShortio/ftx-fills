@@ -9,4 +9,4 @@ chmod +x path/to/main.py
 nohup path/to/main.py &
 ```
 
-![alt text][fill]
+![alt text](fill.png)
