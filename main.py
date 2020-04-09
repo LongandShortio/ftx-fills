@@ -1,3 +1,4 @@
+#! /usr/bin/python3
 import os
 os.chdir("") # Put your working directory
 from tgFills import *
